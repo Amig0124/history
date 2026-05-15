@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Наша Память</title>
+</head>
+<body>
+
+<header class="header">
+    <img src="picture/zvezda.png" alt="Звезда" class="header__logo">
+</header>
+
+<main class="main">
+    <div class="panel">
+        <h1 class="panel__main-title">Летопись Великой Победы</h1>
+
+        <div class="panel__item">
+            <h2>1941</h2>
+            <img src="picture/brest.jpg" alt="1941">
+            <h3 class="mission_text">ГРОЗА НАД ГРАНИЦЕЙ</h3>
+            <h3 class="date">ИЮНЬ – ДЕКАБРЬ 1941</h3>
+            <p>Первые удары, трагедия отступления и рождение гвардии под стенами Москвы.</p>
+            <button class="button" onclick="openModal('mosc')">Открыть архив</button>
+        </div>
+
+        <div class="panel__item">
+            <h2>1942</h2>
+            <img src="picture/stalingrad.jpg" alt="1942">
+            <h3 class="mission_text">ВЕЛИКОЕ ПРОТИВОСТОЯНИЕ</h3>
+            <h3 class="date">ЯНВАРЬ – ДЕКАБРЬ 1942</h3>
+            <p>Битва за Волгу, «Ни шагу назад!» и ледяное дыхание блокадного Ленинграда.</p>
+            <button class="button" onclick="openModal('stal')">Открыть архив</button>
+        </div>
+
+        <div class="panel__item">
+            <h2>1943</h2>
+            <img src="picture/kursk.jpg" alt="1943">
+            <h3 class="mission_text">КОРЕННОЙ ПЕРЕЛОМ</h3>
+            <h3 class="date">ЯНВАРЬ – ДЕКАБРЬ 1943</h3>
+            <p>Курская дуга, форсирование Днепра и начало освобождения захваченных земель.</p>
+            <button class="button" onclick="openModal('tank')">Открыть архив</button>
+        </div>
+
+        <div class="panel__item">
+            <h2>1944</h2>
+            <img src="picture/osvob.jpg" alt="1944">
+            <h3 class="mission_text">ОСВОБОЖДЕНИЕ ЕВРОПЫ</h3>
+            <h3 class="date">ЯНВАРЬ – ДЕКАБРЬ 1944</h3>
+            <p>Десять сталинских ударов, операция «Багратион» и выход к границам Германии.</p>
+            <button class="button" onclick="openModal('wars')">Открыть архив</button>
+        </div>
+
+        <div class="panel__item">
+            <h2>1945</h2>
+            <img src="picture/znam.jpg" alt="1945">
+            <h3 class="mission_text">ПОБЕДНЫЙ ФИНАЛ</h3>
+            <h3 class="date">ЯНВАРЬ – МАЙ 1945</h3>
+            <p>Висло-Одерская операция, штурм Берлина и конец нацистского режима.</p>
+            <button class="button" onclick="openModal('win')">Открыть архив</button>
+        </div>
+
+        <div class="panel__item">
+            <h2>ИТОГИ</h2>
+            <img src="picture/fire.png" alt="Итоги">
+            <h3 class="mission_text">НАСЛЕДИЕ ГЕРОЕВ</h3>
+            <h3 class="date">ПАМЯТЬ ПОКОЛЕНИЙ</h3>
+            <p>Анализ потерь, значение подвига и мирное небо над головой.</p>
+            <button class="button" onclick="openModal('end')">Открыть архив</button>
+        </div>
+    </div>
+</main>
+
+<div id="modalOverlay" class="modal-overlay">
+    <div class="modal-card">
+        <div class="modal-header">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+        </div>
+        <div id="modalContent" class="modal-body">
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
